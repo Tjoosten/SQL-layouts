@@ -1,3 +1,8 @@
+-- Database: PHP_info
+-- Author: Tim Joosten
+-- Engine: MySQL
+-- hosted on github.
+
 create database if not exists PHP_info;
 
 create table if not exists PHP_functions (
@@ -10,5 +15,7 @@ create table if not exists PHP_functions (
 	ENGINE = MyISAM;  
 	
 create table if not exists PHP_tags (
-	)
+	ID int(11) AUTO_INCREMENT,
+	Tag varchar(120),
+	PRIMARY_KEY(ID))
 	ENGINE = MyISAM;
